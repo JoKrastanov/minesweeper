@@ -3,25 +3,25 @@ body {
   font-weight: 600;
   background-color: #858585;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .board {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: grid;
-  width: 85vh;
-  height: 85vh;
+  width: 90vh;
+  height: 90vh;
 }
 
 .menu {
-  width: 85vh;
+  margin-bottom: 5px;
+  width: 90vh;
   display: flex;
   height: 2rem;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .timer-container, .flag-progress {
@@ -29,6 +29,10 @@ body {
 }
 
 .start-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
   padding: 5px;
   font-size: 2rem;
@@ -105,7 +109,7 @@ body {
   font-size: 1.5rem;
   color: red;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -100%);
   background-color: #303030;
